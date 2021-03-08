@@ -6,6 +6,9 @@ import static org.junit.Assert.assertNotNull;
 import java.util.Map;
 
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.cid15.aem.groovy.console.api.BindingExtensionProvider;
+import org.cid15.aem.groovy.console.api.BindingVariable;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -13,9 +16,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.day.cq.replication.Replicator;
-import com.icfolson.aem.groovy.console.api.BindingExtensionProvider;
-import com.icfolson.aem.groovy.console.api.BindingVariable;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 import de.valtech.aecu.api.groovy.console.bindings.AecuBinding;
 import de.valtech.aecu.core.serviceuser.ServiceResourceResolverService;

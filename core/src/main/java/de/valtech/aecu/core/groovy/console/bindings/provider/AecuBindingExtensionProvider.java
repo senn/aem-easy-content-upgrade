@@ -23,15 +23,15 @@ import java.util.Map;
 
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.cid15.aem.groovy.console.api.BindingExtensionProvider;
+import org.cid15.aem.groovy.console.api.BindingVariable;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.day.cq.replication.Replicator;
-import com.icfolson.aem.groovy.console.api.BindingExtensionProvider;
-import com.icfolson.aem.groovy.console.api.BindingVariable;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 import de.valtech.aecu.api.groovy.console.bindings.AecuBinding;
 import de.valtech.aecu.core.groovy.console.bindings.impl.AecuBindingImpl;

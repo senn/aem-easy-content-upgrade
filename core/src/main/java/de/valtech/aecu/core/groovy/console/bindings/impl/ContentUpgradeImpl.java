@@ -32,10 +32,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.jackrabbit.JcrConstants;
 import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 import de.valtech.aecu.api.groovy.console.bindings.ContentUpgrade;
 import de.valtech.aecu.api.groovy.console.bindings.CustomResourceAction;

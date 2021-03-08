@@ -32,12 +32,12 @@ import org.apache.jackrabbit.api.security.user.UserManager;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.day.cq.replication.ReplicationActionType;
 import com.day.cq.replication.Replicator;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 import de.valtech.aecu.api.groovy.console.bindings.ValidateAccessRights;
 import de.valtech.aecu.api.groovy.console.bindings.accessrights.AccessRightValidator;

@@ -36,15 +36,14 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.jcr.resource.api.JcrResourceConstants;
 import org.apache.sling.settings.SlingSettingsService;
+import org.cid15.aem.groovy.console.GroovyConsoleService;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
+import org.cid15.aem.groovy.console.response.RunScriptResponse;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.icfolson.aem.groovy.console.GroovyConsoleService;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
-import com.icfolson.aem.groovy.console.response.RunScriptResponse;
 
 import de.valtech.aecu.api.service.AecuException;
 import de.valtech.aecu.api.service.AecuService;
@@ -219,9 +218,10 @@ public class AecuServiceImpl implements AecuService {
     private String loadScript(String path, ResourceResolver resolver) throws AecuException {
         Resource resource = resolver.getResource(path + "/" + JcrConstants.JCR_CONTENT);
         // https://sling.apache.org/documentation/the-sling-engine/resources.html#binary-support
-        try (InputStream inputStream = resource.adaptTo(InputStream.class)){
+        try (InputStream inputStream = resource.adaptTo(InputStream.class)) {
             if (inputStream == null) {
-                throw new IOException("Resource at '" + path +"' cannot be adapted to InputStream, it doesn't seem to contain binary data");
+                throw new IOException(
+                        "Resource at '" + path + "' cannot be adapted to InputStream, it doesn't seem to contain binary data");
             }
             return IOUtils.toString(inputStream, StandardCharsets.UTF_8);
         } catch (IOException e) {

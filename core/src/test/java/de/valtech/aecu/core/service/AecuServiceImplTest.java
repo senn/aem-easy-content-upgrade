@@ -44,6 +44,10 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.jcr.resource.api.JcrResourceConstants;
 import org.apache.sling.settings.SlingSettingsService;
+import org.cid15.aem.groovy.console.GroovyConsoleService;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
+import org.cid15.aem.groovy.console.response.RunScriptResponse;
+import org.cid15.aem.groovy.console.response.impl.DefaultRunScriptResponse;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -52,11 +56,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import com.icfolson.aem.groovy.console.GroovyConsoleService;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
-import com.icfolson.aem.groovy.console.response.RunScriptResponse;
-import com.icfolson.aem.groovy.console.response.impl.DefaultRunScriptResponse;
 
 import de.valtech.aecu.api.service.AecuException;
 import de.valtech.aecu.api.service.HistoryEntry;

@@ -43,7 +43,6 @@
 						            <Import-Package>
 						              !antlr.*,
                           javax.annotation;version=0.0.0,
-						              com.icfolson.aem.groovy.console.*;version="[15.1,17)",
 						              *
   					            </Import-Package>
                     </instructions>
@@ -93,8 +92,8 @@
             <artifactId>groovy-all</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.icfolson.aem.groovy.console</groupId>
-            <artifactId>aem-groovy-console</artifactId>
+            <groupId>org.cid15.aem.groovy.console</groupId>
+            <artifactId>aem-groovy-console-bundle</artifactId>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>

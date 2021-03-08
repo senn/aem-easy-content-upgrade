@@ -6,12 +6,12 @@ import java.io.UnsupportedEncodingException;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
+import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Charsets;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
-import com.icfolson.aem.groovy.console.constants.GroovyConsoleConstants;
 
 /**
  * Script context to run Groovy Console scripts.

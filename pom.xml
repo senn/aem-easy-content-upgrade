@@ -571,9 +571,9 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.icfolson.aem.groovy.console</groupId>
-                <artifactId>aem-groovy-console</artifactId>
-                <version>16.0.0</version>
+                <groupId>org.cid15.aem.groovy.console</groupId>
+                <artifactId>aem-groovy-console-bundle</artifactId>
+                <version>17.0.0</version>
                 <scope>provided</scope>
                 <!-- exclude dependencies -->
                 <exclusions>
@@ -584,9 +584,9 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>com.icfolson.aem.groovy.console</groupId>
-                <artifactId>aem-groovy-console</artifactId>
-                <version>16.0.0</version>
+                <groupId>org.cid15.aem.groovy.console</groupId>
+                <artifactId>aem-groovy-console-all</artifactId>
+                <version>17.0.0</version>
                 <type>zip</type>
                 <!-- exclude dependencies -->
                 <exclusions>

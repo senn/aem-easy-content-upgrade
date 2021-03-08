@@ -11,6 +11,7 @@ import javax.jcr.security.Privilege;
 
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,6 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.day.cq.replication.Replicator;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 /**
  * Tests AecuBindingImpl

@@ -58,8 +58,8 @@
                     </properties>
                     <subPackages>
                         <subPackage>
-                            <groupId>com.icfolson.aem.groovy.console</groupId>
-                            <artifactId>aem-groovy-console</artifactId>
+                            <groupId>org.cid15.aem.groovy.console</groupId>
+                            <artifactId>aem-groovy-console-all</artifactId>
                             <filter>true</filter>
                         </subPackage>
                         <subPackage>
@@ -101,8 +101,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.icfolson.aem.groovy.console</groupId>
-            <artifactId>aem-groovy-console</artifactId>
+            <groupId>org.cid15.aem.groovy.console</groupId>
+            <artifactId>aem-groovy-console-all</artifactId>
             <type>zip</type>
         </dependency>
         <dependency>

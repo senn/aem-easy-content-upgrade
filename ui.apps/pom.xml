@@ -35,9 +35,8 @@
                     </validatorsSettings>
                     <dependencies>
                         <dependency>
-                            <group>ICF Next</group>
-                            <name>aem-groovy-console</name>
-                            <version>(16,17]</version>
+						                <groupId>org.cid15.aem.groovy.console</groupId>
+						                <artifactId>aem-groovy-console-all</artifactId>
                         </dependency>
                     </dependencies>
                 </configuration>
@@ -53,5 +52,13 @@
             </plugin>
         </plugins>
     </build>
+    
+    <dependencies>
+		    <dependency>
+		        <groupId>org.cid15.aem.groovy.console</groupId>
+		        <artifactId>aem-groovy-console-all</artifactId>
+		        <type>zip</type>
+		    </dependency>
+    </dependencies>
 
 </project>

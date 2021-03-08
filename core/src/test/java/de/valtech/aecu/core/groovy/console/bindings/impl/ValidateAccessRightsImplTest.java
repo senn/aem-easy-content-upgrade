@@ -23,6 +23,7 @@ import org.apache.jackrabbit.api.security.user.UserManager;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.cid15.aem.groovy.console.api.context.ScriptContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +33,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import com.day.cq.replication.ReplicationActionType;
 import com.day.cq.replication.Replicator;
-import com.icfolson.aem.groovy.console.api.context.ScriptContext;
 
 /**
  * Tests ValidateAccessRightsImpl
