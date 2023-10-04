@@ -536,6 +536,19 @@ aecu.contentUpgradeBuilder()
         .run()
 ```
 
+#### Create Label
+
+* doCreateLabel(String language, String key, String value): adds a label to a language node (language) in a i18n node if the label (key, value) is valid. (language nodes will be created if they don't exist yet)
+
+```java
+aecu.contentUpgradeBuilder()
+        .forResources((String[]) ["/content/dictionaries/i18n"])
+        .doCreateLabel("de", "apple", "apfel")
+        .doCreateLabel("fr", "apple", "pomme")
+        .doCreateLabel("es", "apple", "manzana")
+        .run()
+```
+
 #### Copy and Move Properties
 
 This will copy or move a property to a subnode. You can also change the property name.
