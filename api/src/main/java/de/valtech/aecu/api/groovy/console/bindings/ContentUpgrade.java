@@ -768,5 +768,15 @@ public interface ContentUpgrade {
      */
     void run(boolean dryRun) throws PersistenceException, AecuException;
 
+    /**
+     * Creates a label in the i18n node under the corresponding language node. The node is named after the key value and it gets a
+     * sling:message with the value's value. The node is primaryType sling:MessageEntry.
+     *
+     * @param language
+     * @param key
+     * @param value
+     */
+    ContentUpgrade doCreateLabel(String language, String key, String value);
+
 }
 
